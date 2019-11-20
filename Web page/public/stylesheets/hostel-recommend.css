@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url(../font/iconfont/iconfont.eot), url(../font/iconfont/iconfont.ttf), url(../font/iconfont/iconfont.woff), url(../font/iconfont/iconfont.woff2);
+}
+body {
+  background: #f7f7f7;
+}
+.iconfont {
+  font-family: 'iconfont';
+  font-style: normal;
+}
+ul {
+  list-style: none;
+}
+.allcenter {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.b {
+  border: 1px solid;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+header {
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+  position: fixed;
+}
+header .allcenter nav {
+  width: 1200px;
+  height: 50px;
+}
+header .allcenter nav .nav-left {
+  width: 200px;
+  height: 50px;
+  float: left;
+}
+header .allcenter nav .nav-left .logo {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+}
+header .allcenter nav .nav-left .logo img {
+  width: 150px;
+  height: 50px;
+}
+header .allcenter nav .nav-right {
+  height: 50px;
+  line-height: 50px;
+  width: 600px;
+  float: right;
+  color: #000;
+}
+header .allcenter nav .nav-right .return {
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  float: right;
+  color: #000;
+  padding-right: 50px;
+}
+header .allcenter nav .nav-right .return a:hover {
+  color: #FF750C;
+}
+header .allcenter nav .nav-right .login {
+  width: 200px;
+  float: right;
+  color: #000;
+}
+header .allcenter nav .nav-right .login a {
+  display: inline-block;
+  height: 50px;
+  margin: 0 20px;
+}
+header .allcenter nav .nav-right .login a:hover {
+  color: #FF750C;
+}
+#chose-list {
+  padding-top: 50px;
+  background: #fff;
+}
+#chose-list .chose-way {
+  height: 90px;
+  line-height: 90px;
+  padding-left: 30px;
+  border-bottom: 1px solid #eee;
+}
+#chose-list .chose-way .rent {
+  display: block;
+  width: 115px;
+  height: 90px;
+  line-height: 90px;
+  color: #999;
+  font-size: 16px;
+  float: left;
+}
+#chose-list .chose-way ul {
+  float: left;
+  width: 800px;
+}
+#chose-list .chose-way ul li {
+  width: 170px;
+  height: 90px;
+  line-height: 90px;
+  cursor: pointer;
+  color: #000;
+  float: left;
+  font-size: 14px;
+  text-align: center;
+}
+#chose-list .chose-way ul li:hover {
+  color: #FF750C;
+}
+#chose-list .chose-way input {
+  width: 400px;
+  height: 40px;
+  outline: none;
+}
+#chose-house {
+  padding-top: 30px;
+}
+#chose-house .house-list {
+  width: 100%;
+}
+#chose-house .house-list .house-item {
+  width: 1200px;
+  height: 240px;
+  padding: 30px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+#chose-house .house-list .house-item .house-info {
+  float: left;
+  width: 799px;
+  border-right: 1px dashed gray;
+}
+#chose-house .house-list .house-item .house-info .imgkk {
+  float: left;
+  width: 360px;
+  height: 240px;
+  text-align: center;
+  background: #fff;
+  overflow: hidden;
+}
+#chose-house .house-list .house-item .house-info .imgkk img {
+  width: 360px;
+  height: 240px;
+}
+#chose-house .house-list .house-item .house-info .infokk {
+  float: left;
+  padding: 10px;
+}
+#chose-house .house-list .house-item .house-info .infokk h1 {
+  font-size: 20px;
+  height: 30px;
+  width: 380px;
+  line-height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#chose-house .house-list .house-item .house-info .infokk .star {
+  height: 60px;
+  line-height: 60px;
+  color: gray;
+  font-size: 16px;
+}
+#chose-house .house-list .house-item .house-info .infokk .price {
+  margin: 10px 0;
+}
+#chose-house .house-list .house-item .house-info .infokk .price .qian {
+  font-size: 20px;
+}
+#chose-house .house-list .house-item .house-info .infokk .price .num {
+  font-size: 36px;
+  color: #FF750C;
+}
+#chose-house .house-list .house-item .house-info .infokk .price .wan {
+  font-size: 20px;
+  color: gray;
+}
+#chose-house .house-list .house-item .house-info .infokk .room {
+  margin-top: 30px;
+}
+#chose-house .house-list .house-item .house-info .infokk .room span {
+  display: inline-block;
+  font-size: 14px;
+  border: 1px solid gray;
+  padding: 5px;
+  color: gray;
+  border-radius: 10%;
+}
+#chose-house .house-list .house-item .owner-info {
+  width: 400px;
+  float: left;
+  text-align: center;
+  padding-top: 50px;
+}
+#chose-house .house-list .house-item .owner-info img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+#chose-house .house-list .house-item .owner-info .owner {
+  font-size: 14px;
+  margin: 10px;
+}
+#chose-house .house-list .house-item .owner-info .owner-name {
+  font-size: 20px;
+}
+footer {
+  background: #f7f7f7;
+  padding: 50px 0;
+  font-size: 12px;
+  color: #999;
+  border-top: 1px solid #dddddd;
+}
+.footer {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.topLinks a {
+  color: #333;
+  padding: 0 15px;
+  line-height: 20px;
+  transition: 0.5s;
+}
+.topLinks a:hover {
+  color: #8de2d7;
+}
+.share {
+  padding: 20px 0;
+  color: #fff;
+}
+.share span {
+  font-family: 'iconfont';
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 25px;
+  font-size: 36px;
+  color: rgba(255, 255, 255, 0.8);
+  background: #022531;
+  border-radius: 50%;
+}
+.share span:hover {
+  color: #8de2d7;
+}
+footer p {
+  margin-top: 10px;
+}

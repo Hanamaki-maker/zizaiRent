@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<div lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>首页</title>
+        <link rel="icon" href="images/tlogo.png" type="img/x-ico">
+        <link rel="stylesheet" href="stylesheets/index.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="header">
+                <div class="pilot">
+                    <div class="logo">
+                        <img src="images/logo03.png" alt="">
+                    </div>
+                    <button class="iconfont location">&#xe51c;成都</button>
+                    <ul>
+                        <li><a href="index.html" class="bordr">首页</a></li>
+                        <li><a href="pages/rent.html">租房</a></li>
+                        <li><a href="pages/hostel.html">民宿</a></li>
+                        <li><a href="service.html">服务</a></li>
+                        <li><a href="pages/student.html">学生专区</a></li>
+                        <li><a href="pages/owner.html">成为房东</a></li>
+                        <li><a href="pages/about.html">关于我们</a></li>
+                    </ul>
+                    <div class="btn">
+                        <button class="login" onclick="Show()">登录</button>
+                        <button class="register"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="fonts">
+                <h1>品质找房选自在</h1>
+                <h3>————致力于为都市青年打造舒适生活圈</h3>
+                <div class="field">
+                    <button><a href="javascript:;">全部</a></button>
+                    <button><a href="javascript:;">合租</a></button>
+                    <button><a href="javascript:;">整租</a></button>
+                    <button><a href="javascript:;">民宿</a></button>
+                </div>
+                <div class="porch">
+                    <input type="text" name="" id="" placeholder="请输入区域、地铁站、小区名开始找房">
+                    <button class="iconfont mapbtn"><a href="map.html">&#xe51c;地图找房</a></button>
+                    <button><a href="" style="color:white">开始找房</a></button>
+                </div>
+
+            </div>
+        </header>
+        <!-- <div id="allmap"></div> -->
+        <div class="main">
+            <div class="div1">
+                <ul>
+
+                    <li>
+                        <a href="pages/rent.html" target="_blank"><img src="images/idx02.jpg" alt=""></a>
+                        <div>
+                            <h2>租房</h2>
+                            <p>合租/整租/驿栈</p>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        <a href="service.html" target="_blank"><img src="images/idx03.jpg" alt=""></a>
+                        <div>
+                            <h2>服务</h2>
+                            <p>保洁/搬家/维修</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="mall.html" target="_blank"><img src="images/idx04.jpg" alt=""></a>
+                        <div>
+                            <h2>生活</h2>
+                            <p>优质生活环境</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="pages/owner.html" target="_blank"><img src="images/idx05.jpg" alt=""></a>
+                        <div>
+                            <h2>业主</h2>
+                            <p>业主委托/整栋合作/民宿</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="div2">
+                <div class="fonts">
+                    <h2 class="iconfont"><span>&#xe68d;</span>优质租住环境<span>&#xe68e;</span></h2>
+                    <p>/带来全新优质生活体验/</p>
+                </div>
+                <div class="bg">
+                    <img src="images/idx06.jpg" alt="">
+                    <h2><i>深呼吸 放心睡</i></h2>
+                    <p>优于国标E1级板材 I 环保认证装修材料 I 41道关键工序 I 空气密闭检测 I 空置30天入住</p>
+                </div>
+            </div>
+            <div class="div3">
+                <div class="fonts">
+                    <h2 class="iconfont"><span>&#xe68d;</span>优质房源<span>&#xe68e;</span></h2>
+                    <p>/成都附近优质房源/</p>
+                </div>
+                <div class="imgs">
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="div4">
+                <div class="fonts">
+                    <h2 class="iconfont"><span>&#xe68d;</span>全面租住服务<span>&#xe68e;</span></h2>
+                    <p>/帮您简化日常繁琐事务/</p>
+                </div>
+                <div class="clearbox">
+                    <ul>
+                        <li>
+                            <h2 class="curr" data-idx="0">保洁时刻</h2>
+                        </li>
+                        <li>
+                            <h2 data-idx="1">搬家服务</h2>
+                        </li>
+                        <li>
+                            <h2 data-idx="2">家电维修</h2>
+                        </li>
+                    </ul>
+                </div>
+                <!--首页 全面租住服务 -->
+                <div class="imgbox">
+                    <ul></ul>
+                </div>
+            </div>
+            <div class="div5">
+                <div class="fonts">
+                    <h2 class="iconfont"><span>&#xe68d;</span>丰富租住体验<span>&#xe68e;</span></h2>
+                    <p>/一起玩转都市生活/</p>
+                </div>
+
+                <!-- 首页活动 -->
+                <div class="activity">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <div class="topLinks">
+                    <a href="">关于我们</a> |
+                    <a href="">联系我们</a> |
+                    <a href="">加入我们</a> |
+                    <a href="">平台服务协议</a> |
+                    <a href="">房客服务协议</a> |
+                    <a href="">房东服务协议</a>
+                </div>
+                <div class="share">
+                    <span>&#xe629;</span>
+                    <span>&#xe61a;</span>
+                    <span>&#xe613;</span>
+                </div>
+                <p>客服：23333333333</p>
+                <p>Copyright2016-2019 ziroomstay.com 版权所有 京ICP备16045409号-1</p>
+            </div>
+        </footer>
+        <div id="shade" class="c1 hide"></div>
+        <div id="modal" class="c2 hide">
+            <button class="close" onclick="Hide()">X</button>
+            <h1>登录</h1>
+            <p>没有账号？可以去<a href="javascript:;" onclick="zhuce()">注册</a></p>
+            <input type="text" id="dl" class="Name" placeholder="请输入用户名/手机号/邮箱">
+            <input type="password" id="dl" class="password" placeholder="请输入密码">
+            <input type="text" id="input" placeholder="请输入验证码">
+            <button id="code"></button>
+            <div class="submit succss" id="btn">登录</div>
+        </div>
+        <div id="modal2" class="c3 hide">
+            <button class="close" onclick="Hide()">X</button>
+            <h1>注册</h1>
+            <p>已有账号？可以去<a href="javascript:;" onclick="dl()">登录</a></p>
+            <input type="text" id="dl" class="rname" placeholder="请输入用户名" maxlength="11">
+            <input type="password" id="dl" class="rpwd" placeholder="请输入密码">
+            <div class="submit" id="reg">注册</div>
+        </div>
+
+
+
+
+        <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+        <script src="javascripts/logins.js"></script>
+        <!-- <script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=oddfwRI4hycIXvLMSb87BmYvGUPHZeaL"></script> -->
+
+        <script src="javascripts/index.js"></script>
+        <script>
+            var blog = [1, 1, 1];
+            $(document).scroll(function () {
+                let scroll_top = $(document).scrollTop()
+                if (scroll_top > 1100 && blog[2]) {
+                    blog[2] = 0;
+                    $.ajax({
+                        url: 'rent_house.do',
+                        type: 'get',
+                        success: (data) => {
+                            let text = '';
+                            for (let val of data) {
+                                text += `<li>
+                                            <a href="pages/room-details.html" >
+                                                <img src=${val.rent_img} alt=${val.rent_special}>
+                                                <div class="font">
+                                                    <h4><button class="btn1">${val.rent_state}</button>${val.rent_type}</h4>
+                                                    <div><span class="fl">${val.rent_area}㎡ | ${val.rent_floor}层</span>
+                                                        <p class="fr">￥${val.rent_price}/月</p>
+                                                    </div>
+                                                    <div><i class="iconfont fl">&#xe51c;${val.rent_location}</i></div>
+                                                    <div>
+                                                        <button id="btn2">深呼吸</button>
+                                                        <button>离地铁近</button>
+                                                        <button>木棉4.0</button>
+                                                    </div>
+                                                    <div><em class="iconfont fl">&#xe77b;空气质量已检测, 已空置${parseInt(Math.random()*60)}天</em><em
+                                                            class="fr iconfont">&#xe50d;</em></div>
+                                                </div>
+                                            </a>
+                                        </li>`
+                            }
+                            console.log(data);
+
+                            $('.div3>.imgs>ul').append(text);
+
+                        }
+                    })
+
+                }
+                if (scroll_top > 1900 && blog[0]) {
+                    blog[0] = 0;
+                    $.ajax({
+                        url: 'service.do',
+                        type: 'get',
+                        data: {
+                            'type': '3'
+                        },
+                        success: (data) => {
+                            let text = '';
+                            for (let val of data) {
+                                text += `<li>
+                                            <img src=${val.service_img} alt="">
+                                            <div>
+                                                <h2>${val.service_name}</h2>
+                                                <h4>${val.service_nameFu}</h4>
+                                                <p>${val.service_details}</p>
+                                            </div>
+                                        </li>`
+                            }
+                            $('.div4>.imgbox>ul').append(text);
+                        }
+                    })
+                }
+                if (scroll_top > 2600 && blog[1]) {
+                    blog[1] = 0;
+                    $.ajax({
+                        url: 'activity.do',
+                        type: 'get',
+                        success: function (data) {
+                            let text = ''
+                            for (let v of data) {
+                                text += `<li>
+                                        <a href="command.html" target="_blank">
+                                            <img src=${v.activ_img} alt="">
+                                            <div>
+                                                <h3>${v.activ_name}</h3>
+                                                <p>${v.activ_details}</p>
+                                            </div>
+                                        </a>
+                                    </li>`
+                            }
+
+
+                            $('.div5>.activity>ul').append(text);
+                        }
+                    })
+
+
+                }
+
+            })
+
+            $('.div3>.imgs>ul').on('click', function (event) {
+                /* pages/room-details.html */
+                console.log(event.target.alt);
+                localStorage.rent_special = event.target.alt
+            })
+        </script>
+    </body>
+
+    </html>

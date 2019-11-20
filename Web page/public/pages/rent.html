@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自在租房网</title>
+    <link rel="icon" href="../images/tlogo.png" type="img/x-ico">
+    <link rel="stylesheet" href="../stylesheets/rent.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div class="pilot">
+                <div class="logo">
+                    <img src="../images/logo03.png" alt="">
+                </div>
+                <button class="iconfont loc">&#xe51c;成都</button>
+                <ul>
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="rent.html" style="color: #ff750c;border-bottom: 2px solid #ff750c;">租房</a></li>
+                    <li><a href="hostel.html">民宿</a></li>
+                    <li><a href="../service.html">服务</a></li>
+                    <li><a href="student.html">学生专区</a></li>
+                    <li><a href="owner.html">成为房东</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                </ul>
+                <div class="btn">
+                    <button class="login" onclick="Show()">登录</button>
+                    <button class="register" onclick="zc()"></button>
+                </div>
+                <div class="succeed">
+                    <p><span class="iconfont">&#xe635;</span>admin您好！</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="content">
+        <div class="middle">
+            <div class="search">
+                <input type="text" class="search-input" placeholder="请输入小区/商圈/地铁站等...">
+                <a href="">开始找房</a>
+                <a href=""><span>&#xe51c;</span> 地图找房</a>
+            </div>
+            <div class="filter">
+                <ul>
+                    <li id="region">
+                        <b class="title">区域</b>
+                        <a href="#" class="active">不限</a>
+                        <a href="#">双流</a>
+                        <a href="#">金牛</a>
+                        <a href="#">武侯</a>
+                        <a href="#">天府新区</a>
+                        <a href="#">锦江</a>
+                    </li>
+                    <li id="leixin">
+                        <b class="title">类型</b>
+                        <a href="#" class="active">不限</a>
+                        <a href="#">合租</a>
+                        <a href="#">整租</a>
+                        <a href="#">豪宅</a>
+                    </li>
+                    <li id="money">
+                        <b class="title">租金</b>
+                        <a href="#" class="active">不限</a>
+                        <a href="#">1000元以下</a>
+                        <a href="#">1000-1500元</a>
+                        <a href="#">1500-2000元</a>
+                        <a href="#">2500-3000元</a>
+                        <a href="#">3000-3500元</a>
+                        <a href="#">3500元以上</a>
+                        <div class="price-box">
+                            <input type="text"> -
+                            <input type="text"> 元
+                            <input type="button" value="确定">
+                        </div>
+                    </li>
+                    <li id="special">
+                        <b class="title">房源特色</b>
+                        <a href="#">首次出租</a>
+                        <a href="#">非首次出租</a>
+                        <a href="#">独立卫生间</a>
+                        <a href="#">智能门锁</a>
+                        <a href="#">有电梯</a>
+                        <a href="#">绿化率高</a>
+                        <a href="#">离地铁近</a>
+                    </li>
+                    <li id="chaoxiang">
+                        <b class="title">朝向</b>
+                        <a href="#">南</a>
+                        <a href="#">北</a>
+                        <a href="#">东</a>
+                        <a href="#">西</a>
+                        <a href="#">东北</a>
+                    </li>
+                    <li id="heat">
+                        <b class="title">供暖方式</b>
+                        <a href="#">集体供暖</a>
+                        <a href="#">独立供暖</a>
+                        <a href="#">中央供暖</a>
+                    </li>
+                    <li id="times">
+                        <b class="title">签约时长</b>
+                        <a href="#" class="active">不限</a>
+                        <a href="#">月租</a>
+                        <a href="#">短租</a>
+                        <a href="#">年租</a>
+                    </li>
+                    <li id="stay">
+                        <b class="title">房源状态</b>
+                        <a href="#" class="active">不限</a>
+                        <a href="#">可立即入住</a>
+                        <a href="#">可预签</a>
+                        <a href="#">转租</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ct opt">你所选择的是：<button class="tijiao">确定</button></div>
+            <div class="list">
+                <div class="list-filter">
+                    <ul>
+                        <!-- <img src="../images/list-filter.png" alt=""> -->
+                        <li>面积 </li>
+                        <li>价格 </li>
+                        <!-- <img src="../images/list-filter.png" alt=""> -->
+                        <li class="list-active">默认排序</li>
+                    </ul>
+                </div>
+                <div class="list-box">
+                    <ul></ul>
+                    <!-- <div class="listsa">
+                        <ul class="myul"></ul>
+                    </div> -->
+                    <div class="page"> </div>
+                </div>
+                <!-- <div class="page">
+
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="topLinks">
+                <a href="">关于我们</a> |
+                <a href="">联系我们</a> |
+                <a href="">加入我们</a> |
+                <a href="">平台服务协议</a> |
+                <a href="">房客服务协议</a> |
+                <a href="">房东服务协议</a>
+            </div>
+            <div class="share">
+                <span>&#xe629;</span>
+                <span>&#xe61a;</span>
+                <span>&#xe613;</span>
+            </div>
+            <p>客服：23333333333</p>
+            <p>Copyright©2016-2019 ziroomstay.com 版权所有 京ICP备16045409号-1</p>
+        </div>
+    </footer>
+
+    <div id="shade" class="c1 hide"></div>
+    <div id="modal" class="c2 hide">
+        <button class="close" onclick="Hide()">X</button>
+        <h1>登录</h1>
+        <p>没有账号？可以去<a href="javascript:;" onclick="zhuce()">注册</a></p>
+        <input type="text" id="dl" class="Name" placeholder="请输入用户名/手机号/邮箱">
+        <input type="password" id="dl" class="password" placeholder="请输入密码">
+        <input type="text" id="input" placeholder="请输入验证码">
+        <button id="code"></button>
+        <div class="submit succss" id="btn">登录</div>
+    </div>
+    <div id="modal2" class="c3 hide">
+        <button class="close" onclick="Hide()">X</button>
+        <h1>注册</h1>
+        <p>已有账号？可以去<a href="javascript:;" onclick="dl()">登录</a></p>
+        <input type="text" id="dl" class="rname" placeholder="请输入用户名" maxlength="11">
+        <input type="password" id="dl" class="rpwd" placeholder="请输入密码">
+        <div class="submit" id="reg">注册</div>
+    </div>
+
+
+
+    <!-- <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script> -->
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="../javascripts/login.js"></script>
+    <script src="../javascripts/xlPaging.js"></script>
+    <script>
+        var pri = $('.list-filter li')
+        var region = $('#region a')
+        var leixin = $('#leixin a')
+        var money = $('#money a')
+        var special = $('#special a')
+        var chaoxiang = $('#chaoxiang a')
+        var heat = $('#heat a')
+        var times = $('#times a')
+        var stay = $('#stay a')
+        // console.log(region);
+
+        //成功之后的回调函数的封装
+        let data_successf = function (data) {
+            let length1 = data.length;
+            let lengthYe = Math.ceil(length1 / 15);
+            // console.log(length1)
+            // console.log(lengthYe);
+            let fun = (num = 1) => {
+                let text = ''
+                let nu = num;
+                if (num * 15 > length1) {
+                    nu = length1;
+                } else {
+                    nu = num * 15;
+                }
+                for (let i = (num - 1) * 15; i < nu; i++) {
+                    text += `<li>
+                            <div class="pic-box"><a href="room-details.html" target="_blank"><img
+                                        src="../${data[i].rent_img}" alt=""></a></div>
+                            <div class="list-content">
+                                <h4>
+                                    <img src="../images/yq.png" alt="">
+                                    ${data[i].rent_type}</h4>
+                                <div class="area">${data[i].rent_area}㎡ | ${data[i].rent_floor}层</div>
+                                <div class="area location">
+                                    <span>&#xe51c;</span>
+                                    ${data[i].rent_location}
+                                </div>
+                                <div class="tag">
+                                    <span>离地铁近</span>
+                                    <span>布丁4.0</span>
+                                </div>
+                                <div class="tip">
+                                    <img src="../images/kq.png" alt=""></img>
+                                    空气质量已检测, 已空置${parseInt(Math.random() * 29 + 1)}天
+                                </div>
+                                <span class="price">￥${data[i].rent_price}/月</span>
+                            </div>
+                        </li>`
+                }
+                $('.list-box>ul').html(text);
+            }
+            fun()
+            $(".page").paging({
+                nowPage: 1, // 当前页码,默认为1
+                pageNum: lengthYe, // 总页码
+                buttonNum: 5, //要展示的页码数量，默认为7，若小于5则为5
+                canJump: 1,// 是否能跳转。0=不显示（默认），1=显示
+                showOne: 0,//只有一页时，是否显示。0=不显示,1=显示（默认）
+                callback: function (num) { //回调函数,num为当前页码
+                    // console.log(num);
+                    fun(num)
+                }
+            })
+        }
+        //默认排序
+        $.ajax({
+            url: '/rent_house.do',
+            type: 'get',
+            success: function (data) {
+                data_successf(data)
+            }
+
+        })
+
+
+        //默认排序，价格排序，面积排序
+        var arae = 0, price = 0
+        pri.on('click', function () {
+            let text = $(this).index()
+            if (text == 0) {
+                arae++
+            }
+            if (text == 1) {
+                price++
+            }
+            $(this).addClass('list-active').siblings().removeClass('list-active')
+            console.log(text);
+            $.ajax({
+                url: '/rent.do',
+                type: 'get',
+                data: {
+                    'val': text,
+                    'price': price,
+                    'arae': arae
+                },
+                success: function (data) {
+                    data_successf(data)
+                }
+            })
+        })
+        var ct = $('.ct')
+        var cs = 0
+        // var arrr = ['', '', '', '', '', '', '', '']
+        var arr = ['', '', '', '', '', '', '', '']
+        //区域
+        region.on('click', function () {
+            let text = $(this).html()
+            ct.removeClass('opt').html(ct.html() + `<span>${text}</span>`)
+            // arrr[0] = 1
+            arr[0] = $(this).html()
+            console.log(arr);
+
+            cs++
+            let num = 1
+            $(this).addClass('active').siblings().removeClass('active')
+            // $.ajax({
+            //     url: '/region.do',
+            //     type: 'get',
+            //     data: {
+            //         'val': text,
+            //         'label': 1
+            //     },
+            //     success: function (data) {
+            //         console.log(data);
+            //         data_successf(data)
+            //     }
+            // })
+        })
+        //类型
+        leixin.on('click', function () {
+            let text = $(this).html()
+            ct.removeClass('opt').html(ct.html() + `<span>${text}</span>`)
+            // arrr[1] = 1
+            arr[1] = $(this).html()
+            console.log(arr);
+            cs++
+            $(this).addClass('active').siblings().removeClass('active')
+            // $.ajax({
+            //     url: '/region.do',
+            //     type: 'get',
+            //     data: {
+            //         'val': text,
+            //         'label': 2
+            //     },
+            //     success: function (data) {
+            //         console.log(data);
+            //         data_successf(data)
+            //     }
+            // })
+        })
+
+        $('.ct').on('click', function (e) {
+            console.log(e.target.nodeName);
+            if (e.target.nodeName == 'span' || e.target.nodeName == 'SPAN') {
+                $(e.target).remove()
+                cs--
+                if (cs <= 0) {
+                    ct.addClass('opt')
+                }
+            }
+        })
+
+        $('.ct').on('click', function (e) {
+            // let arr = []
+            if (e.target.innerHTML == '确定') {
+                // console.log(12);
+                // let text = $('.ct>span')
+                // console.log(text);
+                // for (let i = 0; i < text.length; i++) {
+                //     arr.push($(text[i]).html())
+                // }
+                // console.log(arr);
+                $.ajax({
+                    url: '/region.do',
+                    type: 'get',
+                    data: {
+                        'arr': arr,
+                        // 'arrr':arrr,
+                    },
+                    success: function (data) {
+                        // console.log(data);
+                        data_successf(data)
+                    }
+                })
+            }
+
+
+
+        })
+
+
+        var succss = $('.succss');
+
+        succss.on('click', function () {
+            $('.succeed').css({
+                display: 'block'
+            })
+            $('.c1').css({
+                display: 'none'
+            })
+            $('.c2').css({
+                display: 'none'
+            })
+            $('.btn').css({
+                display: 'none'
+            })
+
+        })
+        function Show() {
+            document.getElementById('shade').classList.remove('hide');
+            document.getElementById('modal').classList.remove('hide');
+            document.getElementById('modal2').classList.remove('hide');
+        }
+        function zhuce() {
+            // document.getElementById('modal').classList.add('hide');
+            // document.getElementById('modal2').classList.remove('hide');
+            document.getElementById('modal').classList.add('div1');
+            document.getElementById('modal2').classList.add('div2');
+        }
+        function dl() {
+            // document.getElementById('modal2').classList.add('hide');
+            // document.getElementById('modal').classList.remove('hide');
+            document.getElementById('modal').classList.remove('div1');
+            document.getElementById('modal2').classList.remove('div2');
+        }
+        function Hide() {
+            document.getElementById('shade').classList.add('hide');
+            document.getElementById('modal').classList.add('hide');
+            document.getElementById('modal2').classList.add('hide');
+        }
+    </script>
+
+</body>
+
+</html>

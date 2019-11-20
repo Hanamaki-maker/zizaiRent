@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学生专区</title>
+    <link rel="icon" href="../images/tlogo.png" type="img/x-ico">
+    <link rel="stylesheet" href="../stylesheets/student.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="allcenter">
+                <div class="pilot">
+                    <div class="logo">
+                        <img src="../images/logo.png" alt="">
+                    </div>
+                    <button class="iconfont location">&#xe51c;成都</button>
+                    <ul>
+                        <li><a href="../index.html">首页</a></li>
+                        <li><a href="rent.html">租房</a></li>
+                        <li><a href="hostel.html">民宿</a></li>
+                        <li><a href="../service.html">服务</a></li>
+                        <li><a href="student.html" style="color: #ff750c;border-bottom: 2px solid">学生专区</a></li>
+                        <li><a href="owner.html">成为房东</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                    </ul>
+                    <div class="btn">
+                        <button class="login" onclick="Show()"> 登录</button>
+                        <button class="register"></button>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="activity">
+        <div class="allcenter">
+            <div class="bg">
+                <img src="../images/student/headL.jpg" alt="">
+                <div class="head">毕业租房选租租</div>
+                <img src="../images/student/headR.png" alt="">
+            </div>
+            <div class="cheap">
+                <h1><i class="iconfont">&#xe68e;</i> 优惠活动 <i class="iconfont">&#xe68d;</i></h1>
+                <div class="text">
+                    <p>随着毕业季的来临，全国800余万应届毕业生也将进入签约工作、新城市安家的繁忙阶段。离开宿舍，迎来崭新开始，应届毕业生对租住生活虽有忧虑，也充满期待。</p>
+                    <p>今年应届毕业生不仅能以超低费用租到品质好房，还可享受从搬家、保洁、生活用品购置、出行、娱乐、旅游、个人成长等方方面面的优惠，让应届毕业生勇敢选择、舒适生活。</p>
+                    <h2>月付 0押金 送搬家券 毕业租房选租租</h2>
+                    <p>从宿舍搬离，每一位毕业生都希望住干净房子、过品质生活，但真正租房时会发现：不知道如何挑选房子、付款要押一付三、搬家难、租期出现问题等，从未经历过这些的毕业生该怎样租房？</p>
+                    <p>租租以“品质”为核心，致力于打造租房、服务一体化，将用户的需求，用户的居住体验放在首位，结合用户多方面要求提供定制化服务，提供专属管家，专属上门服务，打造舒适居住体验。为人们提供了更美好的居住体验，更会引领居住消费市场向高质量发展。
+                    </p>
+                </div>
+            </div>
+            <div class="team">
+                <h1><i class="iconfont">&#xe68e;</i> 报团优惠 <i class="iconfont">&#xe68d;</i></h1>
+                <div class="container">
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="../images/student/img01.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h2>No.1</h2>
+                            <p>学生认证</p>
+                            <a href="#">更多</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="../images/student/img02.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h2>No.2</h2>
+                            <p>合租2人团购9.8折</p>
+                            <a href="#">更多</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="imgbox">
+                            <img src="../images/student/img04.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h2>No.3</h2>
+                            <p>合租3人团购9.5折</p>
+                            <a href="#">更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="topLinks">
+                <a href="">关于我们</a> |
+                <a href="">联系我们</a> |
+                <a href="">加入我们</a> |
+                <a href="">平台服务协议</a> |
+                <a href="">房客服务协议</a> |
+                <a href="">房东服务协议</a>
+            </div>
+            <div class="share">
+                <span>&#xe629;</span>
+                <span>&#xe61a;</span>
+                <span>&#xe613;</span>
+            </div>
+            <p>客服：23333333333</p>
+            <p>Copyright2016-2019 ziroomstay.com 版权所有 京ICP备16045409号-1</p>
+        </div>
+    </footer>
+    <div id="shade" class="c1 hide"></div>
+    <div id="modal" class="c2 hide">
+        <button class="close" onclick="Hide()">X</button>
+        <h1>登录</h1>
+        <p>没有账号？可以去<a href="javascript:;" onclick="zhuce()">注册</a></p>
+        <input type="text" id="dl" class="Name" placeholder="请输入用户名/手机号/邮箱">
+        <input type="password" id="dl" class="password" placeholder="请输入密码">
+        <input type="text" id="input" placeholder="请输入验证码">
+        <button id="code"></button>
+        <div class="submit succss" id="btn">登录</div>
+    </div>
+    <div id="modal2" class="c3 hide">
+        <button class="close" onclick="Hide()">X</button>
+        <h1>注册</h1>
+        <p>已有账号？可以去<a href="javascript:;" onclick="dl()">登录</a></p>
+        <input type="text" id="dl" class="rname" placeholder="请输入用户名" maxlength="11">
+        <input type="password" id="dl" class="rpwd" placeholder="请输入密码">
+        <div class="submit" id="reg">注册</div>
+    </div>
+
+
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../javascripts/login.js"></script>
+    <script>
+
+
+        var succss = $('.succss');
+
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 450) {
+                $('.header>.pilot>.succeed>p').css({
+                    color: 'black'
+                })
+            } else {
+                $('.header>.pilot>.succeed>p').css({
+                    color: 'white'
+                })
+            }
+        })
+
+
+        function Show() {
+            document.getElementById('shade').classList.remove('hide');
+            document.getElementById('modal').classList.remove('hide');
+            document.getElementById('modal2').classList.remove('hide');
+        }
+        function zhuce() {
+            // document.getElementById('modal').classList.add('hide');
+            // document.getElementById('modal2').classList.remove('hide');
+            document.getElementById('modal').classList.add('div1');
+            document.getElementById('modal2').classList.add('div2');
+        }
+        function dl() {
+            // document.getElementById('modal2').classList.add('hide');
+            // document.getElementById('modal').classList.remove('hide');
+            document.getElementById('modal').classList.remove('div1');
+            document.getElementById('modal2').classList.remove('div2');
+        }
+        function Hide() {
+            document.getElementById('shade').classList.add('hide');
+            document.getElementById('modal').classList.add('hide');
+            document.getElementById('modal2').classList.add('hide');
+        }</script>
+</body>
+
+</html>
